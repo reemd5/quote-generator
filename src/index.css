@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(hsl(350, 100%, 88%), hsl(300, 68%, 80%));
+  font-family: Arial, sans-serif;
+}
+
+.quoteGenerator {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+.container {
+  position: relative;
+  padding: 20px;
+  max-width: 600px;
+  border: 3px solid black;
+}
+
+.fa-quote-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.fa-quote-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.quote {
+  margin-top: 20px;
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+}
+
+.author {
+  margin-bottom: 20px;
+  text-align: end;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.button {
+  text-align: center;
+}
+
+.generate {
+  font-size: 2rem;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 5px;
+  background-color: hsl(350, 100%, 68%);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.generate:hover {
+  transform: scale(1.1);
+}
+
+.options {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  display: flex;
+  column-gap: 10px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: hsl(350, 100%, 68%);
+  transform: scale(1.2);
+  text-shadow: 1px 1px black;
+}
+
+select{
+  font-size: 1.2em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .quoteGenerator {
+    margin: 15px;
+  }
+
+  .container {
+    max-width: 90vw;
+    padding: 15px;
+  }
+
+  .quote {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+
+  .author {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .button .generate {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+
+  select {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .quoteGenerator {
+    margin: 20px;
+  }
+
+  .container {
+    max-width: 80vw;
+    padding: 18px;
+  }
+
+  .quote {
+    font-size: 1.8rem;
+  }
+
+  .author {
+    font-size: 1.5rem;
+  }
+
+  .button .generate {
+    font-size: 1.8rem;
+    padding: 6px;
+  }
+
+  select {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+  }
+}
